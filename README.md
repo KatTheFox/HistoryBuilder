@@ -6,7 +6,7 @@ HistoryBuilder is a framework for building custom origins in [Book of Hours](htt
 
 First, you'll need to either download the [latest release](https://github.com/KatTheFox/HistoryBuilder/releases/latest) or [clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). They should both be the same.
 
-Then, you'll need to find the Book Of Hours content directory, which will be either `Book of Hours/bh_Data/StreamingAssets/bhcontent/core` (on Linux or Windows) or `Book of Hours/OSX.app/Contents/Resources/Data/StreamingAssets/bhcontent/core/` (on Mac). The Book of Hours game directory can be found by right clicking the game in Steam and clicking 'browse local files'. Put the `__historybuilder_mod` folder there. (Or, if you're more tech savvy, want easier updates, and you cloned the repo, make a symlink there, pointing to the `__historybuilder_mod` folder in this repo. If you don't know what that means, ignore this.)
+Then, you need to find the Book of Hours content directory. First locate the Book of Hours game directory by right clicking the game in Steam and clicking 'browse local files'. Then, you'll need to go to the Book Of Hours content directory, which will be either `Book of Hours/bh_Data/StreamingAssets/bhcontent/core` (on Linux or Windows) or `Book of Hours/OSX.app/Contents/Resources/Data/StreamingAssets/bhcontent/core/` (on Mac). Put the `__historybuilder_mod` folder there. (Or, if you're more tech savvy, want easier updates, and you cloned the repo, make a symlink there, pointing to the `__historybuilder_mod` folder in this repo. If you don't know what that means, ignore this.)
 
 If you're just playing someone else's origins, you can stop there. The `__historybuilder_mod` folder is offered as a standalone download for that purpose. Put the origin mods you want to play with in the same folder you put the `__historybuilder_mod` folder in (`bhcontent/core/`) and it should work out of the box.
 
@@ -14,7 +14,11 @@ If you're making custom origins yourself, you'll need to do some more setup.
 
 ## Custom Origins
 
-To make a custom origin, all you need to do is make a copy of `template_origin.json` and edit the values inside it. Once you've customized it to your liking, run the python script included here (`main.py`) and point it to your origin json. For example, to process the `template_origin.json` directly (DO NOT DO THIS, IT IS JUST AN EXAMPLE) you would run `python main.py template_origin.json` in your terminal of choice. The script will process your json file and generate a folder named similarly to your json (in this example, the script would make a folder called `_template_origin`). That output folder is your origin mod; put it in the Book of Hours content folder next to the `_historybuilder_mod` folder from earlier. Start the game and verify that everything works as intended; you should be able to select your custom origin right away.
+To make a custom origin, all you need to do is make a copy of `template_origin.json` and edit the values inside it. Once you've customized it to your liking, run the python script included here (`main.py`) and point it to your origin json.
+
+For example, to process the `template_origin.json` directly (DO NOT DO THIS, IT IS JUST AN EXAMPLE) you would run `python main.py template_origin.json` in your terminal of choice. The script will process your json file and generate a folder named similarly to your json (in this example, the script would make a folder called `_template_origin`).
+
+That output folder is your origin mod; put it in the Book of Hours content folder next to the `_historybuilder_mod` folder from earlier. Start the game and verify that everything works as intended; you should be able to select your custom origin right away.
 
 ## How does it look in-game?
 

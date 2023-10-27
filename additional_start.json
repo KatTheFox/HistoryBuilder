@@ -1,0 +1,76 @@
+{
+  "recipes": [
+    {
+      "id": "setup.librarian.talk.wist",
+      "actionid": "talk.setup",
+      "label": "Memory?",
+      "startdescription": "I begin to remember- fragments of my old life. Somehow, I find the strength to continue.",
+      "desc": "At last, the light of a hurricane lamp bobbing in the dark. As it approaches, a face looms out of the night.",
+      "reqs": { "xwis": 1 },
+      "aspects": { "fatiguing": 1, "advancing": 1 },
+      "warmup": 10,
+      "effects": { "assistance.fisherman.intro": 1 },
+      "craftable": true
+    },
+    {
+      "id": "setup.librarian.talk.mettle",
+      "actionid": "talk.setup",
+      "label": "Determination?",
+      "startdescription": "I carry great inner strength. I refuse to stop here. I press on.",
+      "desc": "At last, the light of a hurricane lamp bobbing in the dark. As it approaches, a face looms out of the night.",
+      "reqs": { "xmet": 1 },
+      "aspects": { "fatiguing": 1, "advancing": 1 },
+      "warmup": 10,
+      "effects": { "assistance.fisherman.intro": 1 },
+      "craftable": true
+    },
+    {
+      "id": "setup.librarian.talk.phost",
+      "actionid": "talk.setup",
+      "label": "Light?",
+      "startdescription": "Inner light is usually to be guarded. But perhaps, if I let it shine, I could attract attention.",
+      "desc": "At last, the light of a hurricane lamp bobbing in the dark. As it approaches, a face looms out of the night.",
+      "reqs": { "xpho": 1 },
+      "aspects": { "fatiguing": 1, "advancing": 1 },
+      "warmup": 10,
+      "effects": { "assistance.fisherman.intro": 1 },
+      "craftable": true
+    },
+    {
+      "id": "setup.librarian.talk.ereb",
+      "actionid": "talk.setup",
+      "label": "Pride?",
+      "startdescription": "Is this it? To end, so mundanely- it will not do.",
+      "desc": "With my remaining strength- a primal scream. Then a pause. At last, the light of a hurricane lamp bobbing in the dark. As it approaches, a face looms out of the night.",
+      "reqs": { "xere": 1 },
+      "aspects": { "fatiguing": 1, "advancing": 1 },
+      "warmup": 10,
+      "effects": { "assistance.fisherman.intro": 1 },
+      "craftable": true
+    },
+    {
+      "id": "setup.librarian.talk.trist",
+      "actionid": "talk.setup",
+      "label": "Yearning?",
+      "startdescription": "That old yearning stirs within me once more.",
+      "desc": "Something shifts, just outside of view- slowly, I crawl towards it. At last, the light of a hurricane lamp bobbing in the dark. As it approaches, a face looms out of the night.",
+      "reqs": { "xtri": 1 },
+      "aspects": { "fatiguing": 1, "advancing": 1 },
+      "warmup": 10,
+      "effects": { "assistance.fisherman.intro": 1 },
+      "craftable": true
+    },
+    {
+      "id": "setup.librarian.talk.health",
+      "actionid": "talk.setup",
+      "label": "Strength?",
+      "startdescription": "My body is not done, not yet.",
+      "desc": "At last, the light of a hurricane lamp bobbing in the dark. As it approaches, a face looms out of the night.",
+      "reqs": { "xhea": 1 },
+      "aspects": { "fatiguing": 1, "advancing": 1 },
+      "warmup": 10,
+      "effects": { "assistance.fisherman.intro": 1 },
+      "craftable": true
+    }
+  ]
+}

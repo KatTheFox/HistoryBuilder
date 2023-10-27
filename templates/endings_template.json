@@ -1,0 +1,112 @@
+{
+  "endings": [
+    {
+      "id": "end.h.{N1A1}.{NUMEN1}.{ORIGIN_ID}",
+      "image": "{ENDING1_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING1_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING1_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN1}"
+      ]
+    },
+    {
+      "id": "end.h.{N1A2}.{NUMEN1}.{ORIGIN_ID}",
+      "image": "{ENDING2_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING2_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING2_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN1}"
+      ]
+    },
+    {
+      "id": "end.h.{N1A3}.{NUMEN1}.{ORIGIN_ID}",
+      "image": "{ENDING3_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING3_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING3_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN1}"
+      ]
+    },
+    {
+      "id": "end.h.{N2A1}.{NUMEN2}.{ORIGIN_ID}",
+      "image": "{ENDING4_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING4_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING4_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN2}"
+      ]
+    },
+    {
+      "id": "end.h.{N2A2}.{NUMEN2}.{ORIGIN_ID}",
+      "image": "{ENDING5_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING5_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING5_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN2}"
+      ]
+    },
+    {
+      "id": "end.h.{N2A3}.{NUMEN2}.{ORIGIN_ID}",
+      "image": "{ENDING6_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING6_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING6_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN2}"
+      ]
+    },
+    {
+      "id": "end.h.{N3A1}.{NUMEN3}.{ORIGIN_ID}",
+      "image": "{ENDING7_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING7_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING7_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN3}"
+      ]
+    },
+    {
+      "id": "end.h.{N3A2}.{NUMEN3}.{ORIGIN_ID}",
+      "image": "{ENDING8_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING8_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING8_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN3}"
+      ]
+    },
+    {
+      "id": "end.h.{N3A3}.{NUMEN3}.{ORIGIN_ID}",
+      "image": "{ENDING9_TAROT}",
+      "label": "{ORIGIN_NAME} Victory: {ENDING9_NAME}",
+      "desc": "{ENDING1_DESC}\n\n<i>[You have proved yourself as Librarian; convinced the Hours to accept a History; changed the world; won the game. This is the memory that does not die. Please accept our congratulations.]</i>",
+      "flavour": "Grand",
+      "achievements": [
+        "A_V_HISTORY_{ENDING9_TAROT}",
+        "A_V_ORIGIN_{ORIGIN_ID}",
+        "A_V_NUMEN_{NUMEN3}"
+      ]
+    }
+  ]
+}

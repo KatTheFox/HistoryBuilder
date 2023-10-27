@@ -1,0 +1,262 @@
+{
+  "recipes": [
+    {
+      "id": "present.h.{N1A1}.{NUMEN1}.{ORIGIN_ID}",
+      "actionid": "world.tree.gate",
+      "label": "Call for my History to be witnessed",
+      "startdescription": "'Earth, sky, sea: bear witness to my work. [You've wrought a History which at least one of the Hours will endorse. This is the point of no return. Many of these Histories are strange or wild. Unless you're certain you want to end the game, remain here in the peace of the House.]",
+      "reqs": {
+        "ability": 1,
+        "h.{N1A1}.{NUMEN1}": 1,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "ending": "end.h.{N1A1}.{NUMEN1}.{ORIGIN_ID}",
+      "extantreqs": { "season.numa": 1 },
+      "warmup": 10,
+      "craftable": true
+    },
+    {
+      "id": "present.h.{N1A2}.{NUMEN1}.{ORIGIN_ID}",
+      "actionid": "world.tree.gate",
+      "label": "Call for my History to be witnessed",
+      "startdescription": "'Earth, sky, sea: bear witness to my work. [You've wrought a History which at least one of the Hours will endorse. This is the point of no return. Many of these Histories are strange or wild. Unless you're certain you want to end the game, remain here in the peace of the House.]",
+      "reqs": {
+        "ability": 1,
+        "h.{N1A2}.{NUMEN1}": 1,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "ending": "end.h.{N1A2}.{NUMEN1}.{ORIGIN_ID}",
+      "extantreqs": { "season.numa": 1 },
+      "warmup": 10,
+      "craftable": true
+    },
+    {
+      "id": "present.h.{N1A3}.{NUMEN1}.{ORIGIN_ID}",
+      "actionid": "world.tree.gate",
+      "label": "Call for my History to be witnessed",
+      "startdescription": "'Earth, sky, sea: bear witness to my work. [You've wrought a History which at least one of the Hours will endorse. This is the point of no return. Many of these Histories are strange or wild. Unless you're certain you want to end the game, remain here in the peace of the House.]",
+      "reqs": {
+        "ability": 1,
+        "h.{N1A3}.{NUMEN1}": 1,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "ending": "end.h.{N1A3}.{NUMEN1}.{ORIGIN_ID}",
+      "extantreqs": { "season.numa": 1 },
+      "warmup": 10,
+      "craftable": true
+    },
+    {
+      "id": "present.h.{N2A1}.{NUMEN2}.{ORIGIN_ID}",
+      "actionid": "world.tree.gate",
+      "label": "Call for my History to be witnessed",
+      "startdescription": "'Earth, sky, sea: bear witness to my work. [You've wrought a History which at least one of the Hours will endorse. This is the point of no return. Many of these Histories are strange or wild. Unless you're certain you want to end the game, remain here in the peace of the House.]",
+      "reqs": {
+        "ability": 1,
+        "h.{N2A1}.{NUMEN2}": 1,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "ending": "end.h.{N2A1}.{NUMEN1}.{ORIGIN_ID}",
+      "extantreqs": { "season.numa": 1 },
+      "warmup": 10,
+      "craftable": true
+    },
+    {
+      "id": "present.h.{N2A2}.{NUMEN2}.{ORIGIN_ID}",
+      "actionid": "world.tree.gate",
+      "label": "Call for my History to be witnessed",
+      "startdescription": "'Earth, sky, sea: bear witness to my work. [You've wrought a History which at least one of the Hours will endorse. This is the point of no return. Many of these Histories are strange or wild. Unless you're certain you want to end the game, remain here in the peace of the House.]",
+      "reqs": {
+        "ability": 1,
+        "h.{N2A2}.{NUMEN2}": 1,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "ending": "end.h.{N2A2}.{NUMEN1}.{ORIGIN_ID}",
+      "extantreqs": { "season.numa": 1 },
+      "warmup": 10,
+      "craftable": true
+    },
+    {
+      "id": "present.h.{N2A3}.{NUMEN2}.{ORIGIN_ID}",
+      "actionid": "world.tree.gate",
+      "label": "Call for my History to be witnessed",
+      "startdescription": "'Earth, sky, sea: bear witness to my work. [You've wrought a History which at least one of the Hours will endorse. This is the point of no return. Many of these Histories are strange or wild. Unless you're certain you want to end the game, remain here in the peace of the House.]",
+      "reqs": {
+        "ability": 1,
+        "h.{N2A3}.{NUMEN2}": 1,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "ending": "end.h.{N2A3}.{NUMEN1}.{ORIGIN_ID}",
+      "extantreqs": { "season.numa": 1 },
+      "warmup": 10,
+      "craftable": true
+    },
+    {
+      "id": "record.h.{N1A1}.{NUMEN1}.{ORIGIN_ID}",
+      "actionid": "*consider",
+      "label": "{ORIGIN_NAME} Victory: {HISTORY1_NAME}",
+      "startdescription": "{HISTORY1_DESC} [When the Librarian records a History, even the Hours take note. Making this decision cannot be reversed; it will begin the end game.]",
+      "desc": "It is written. [You have recorded a new History. Bring it to Earl Brian's Field in the season of Numa, and the Hours will bear witness.]",
+      "reqs": {
+        "history": -1,
+        "ability": 1,
+        "ink": 1,
+        "journal": 1,
+        "numen.{NUMEN1}": 1,
+        "{N1A1}": 25,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "mutations": [
+        {
+          "filter": "journal",
+          "mutate": "h.{N1A1}.{NUMEN1}",
+          "level": 1,
+          "additive": false
+        },
+        { "filter": "journal", "mutate": "history", "level": 1 }
+      ],
+      "aspects": { "fatiguing": 1 },
+      "warmup": 60,
+      "craftable": true
+    },
+    {
+      "id": "record.h.{N1A2}.{NUMEN1}.{ORIGIN_ID}",
+      "actionid": "*consider",
+      "label": "{ORIGIN_NAME} Victory: {HISTORY2_NAME}",
+      "startdescription": "{HISTORY2_DESC} [When the Librarian records a History, even the Hours take note. Making this decision cannot be reversed; it will begin the end game.]",
+      "desc": "It is written. [You have recorded a new History. Bring it to Earl Brian's Field in the season of Numa, and the Hours will bear witness.]",
+      "reqs": {
+        "history": -1,
+        "ability": 1,
+        "ink": 1,
+        "journal": 1,
+        "numen.{NUMEN1}": 1,
+        "{N1A2}": 25,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "mutations": [
+        {
+          "filter": "journal",
+          "mutate": "h.{N1A2}.{NUMEN1}",
+          "level": 1,
+          "additive": false
+        },
+        { "filter": "journal", "mutate": "history", "level": 1 }
+      ],
+      "aspects": { "fatiguing": 1 },
+      "warmup": 60,
+      "craftable": true
+    },
+    {
+      "id": "record.h.{N1A3}.{NUMEN1}.{ORIGIN_ID}",
+      "actionid": "*consider",
+      "label": "{ORIGIN_NAME} Victory: {HISTORY3_NAME}",
+      "startdescription": "{HISTORY3_DESC} [When the Librarian records a History, even the Hours take note. Making this decision cannot be reversed; it will begin the end game.]",
+      "desc": "It is written. [You have recorded a new History. Bring it to Earl Brian's Field in the season of Numa, and the Hours will bear witness.]",
+      "reqs": {
+        "history": -1,
+        "ability": 1,
+        "ink": 1,
+        "journal": 1,
+        "numen.{NUMEN1}": 1,
+        "{N1A3}": 25,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "mutations": [
+        {
+          "filter": "journal",
+          "mutate": "h.{N1A3}.{NUMEN1}",
+          "level": 1,
+          "additive": false
+        },
+        { "filter": "journal", "mutate": "history", "level": 1 }
+      ],
+      "aspects": { "fatiguing": 1 },
+      "warmup": 60,
+      "craftable": true
+    },
+    {
+      "id": "record.h.{N2A1}.{NUMEN2}.{ORIGIN_ID}",
+      "actionid": "*consider",
+      "label": "{ORIGIN_NAME} Victory: {HISTORY4_NAME}",
+      "startdescription": "{HISTORY4_DESC} [When the Librarian records a History, even the Hours take note. Making this decision cannot be reversed; it will begin the end game.]",
+      "desc": "It is written. [You have recorded a new History. Bring it to Earl Brian's Field in the season of Numa, and the Hours will bear witness.]",
+      "reqs": {
+        "history": -1,
+        "ability": 1,
+        "ink": 1,
+        "journal": 1,
+        "numen.{NUMEN2}": 1,
+        "{N2A1}": 25,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "mutations": [
+        {
+          "filter": "journal",
+          "mutate": "h.{N2A1}.{NUMEN2}",
+          "level": 1,
+          "additive": false
+        },
+        { "filter": "journal", "mutate": "history", "level": 1 }
+      ],
+      "aspects": { "fatiguing": 1 },
+      "warmup": 60,
+      "craftable": true
+    },
+    {
+      "id": "record.h.{N2A2}.{NUMEN2}.{ORIGIN_ID}",
+      "actionid": "*consider",
+      "label": "{ORIGIN_NAME} Victory: {HISTORY5_NAME}",
+      "startdescription": "{HISTORY5_DESC} [When the Librarian records a History, even the Hours take note. Making this decision cannot be reversed; it will begin the end game.]",
+      "desc": "It is written. [You have recorded a new History. Bring it to Earl Brian's Field in the season of Numa, and the Hours will bear witness.]",
+      "reqs": {
+        "history": -1,
+        "ability": 1,
+        "ink": 1,
+        "journal": 1,
+        "numen.{NUMEN2}": 1,
+        "{N2A2}": 25,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "mutations": [
+        {
+          "filter": "journal",
+          "mutate": "h.{N2A2}.{NUMEN2}",
+          "level": 1,
+          "additive": false
+        },
+        { "filter": "journal", "mutate": "history", "level": 1 }
+      ],
+      "aspects": { "fatiguing": 1 },
+      "warmup": 60,
+      "craftable": true
+    },
+    {
+      "id": "record.h.{N2A3}.{NUMEN2}.{ORIGIN_ID}",
+      "actionid": "*consider",
+      "label": "{ORIGIN_NAME} Victory: {HISTORY6_NAME}",
+      "startdescription": "{HISTORY6_DESC} [When the Librarian records a History, even the Hours take note. Making this decision cannot be reversed; it will begin the end game.]",
+      "desc": "It is written. [You have recorded a new History. Bring it to Earl Brian's Field in the season of Numa, and the Hours will bear witness.]",
+      "reqs": {
+        "history": -1,
+        "ability": 1,
+        "ink": 1,
+        "journal": 1,
+        "numen.{NUMEN2}": 1,
+        "{N2A3}": 25,
+        "journal.{ORIGIN_ID}": 1
+      },
+      "mutations": [
+        {
+          "filter": "journal",
+          "mutate": "h.{N2A3}.{NUMEN2}",
+          "level": 1,
+          "additive": false
+        },
+        { "filter": "journal", "mutate": "history", "level": 1 }
+      ],
+      "aspects": { "fatiguing": 1 },
+      "warmup": 60,
+      "craftable": true
+    }
+  ]
+}

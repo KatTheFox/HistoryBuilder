@@ -15,8 +15,10 @@ def replaceStr(inStr: str):
     return re.sub(regex, executeReplace, inStr)
 
 
-def processTemplate(filename: str):
-    templatepath = path.join(getcwd(), "templates", filename)
+def processTemplate(filename: str, three: bool):
+    templatepath = path.join(
+        getcwd(), "templates" if three else "templates_two", filename
+    )
     template = open(templatepath)
     templateContents = template.read()
     template.close()
@@ -30,9 +32,9 @@ def processTemplate(filename: str):
     outfile.close()
 
 
-def loopFiles():
-    for i in listdir(path.join(getcwd(), "templates")):
-        processTemplate(i)
+def loopFiles(three: bool):
+    for i in listdir(path.join(getcwd(), "templates" if three else "templates_two")):
+        processTemplate(i, three)
 
 
 def main():
@@ -51,7 +53,7 @@ def main():
     rmtree(path.join(cwd, "_" + modname), ignore_errors=True)
     makedirs(path.join(cwd, "_" + modname), exist_ok=True)
     outDir = path.join(cwd, "_" + modname)
-    loopFiles()
+    loopFiles("NUMEN3" in values)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,79 @@
+{
+  "elements": [
+    {
+      "id": "historybuilder.setup.{ORIGIN_ID}",
+      "icon": "{ORIGIN_SETUP_ICON}",
+      "label": "Origin: {ORIGIN_NAME}",
+      "aspects": { "memory": 1 },
+      "desc": "Flashes of memory- are they mine? [Use this to forgo the normal Origin selection, and start the game as {ORIGIN_NAME}]"
+    },
+    {
+      "id": "historybuilder.pre.journal.{ORIGIN_ID}",
+      "icon": "journal.generic.start",
+      "label": "A Drowned Book",
+      "desc": "The one possession I kept from the shipwreck. It must be important to me. [The Aspects below tell you more about how and where you can use this item. Mouse over them to learn more.]",
+      "manifestationtype": "Book",
+      "aspects": {
+        "soaked": 1,
+        "readable": 1,
+        "journal": 1,
+        "thing": 1,
+        "mystery.{ORIGIN_MYSTERY}": 1,
+        "{ORIGIN_JOURNAL_ASPECT}": 1
+      },
+      "audio": "Book"
+    },
+
+    {
+      "id": "journal.{ORIGIN_ID}.unc",
+      "icon": "{VANILLA_UNCAT_JOURNAL_ICON}",
+      "label": "{UNC_JOURNAL_NAME}",
+      "desc": "{UNC_JOURNAL_DESC}",
+      "inherits": "_book.unc",
+      "aspects": {
+        "journal": 1,
+        "mystery.{ORIGIN_MYSTERY}": 1,
+        "{ORIGIN_JOURNAL_ASPECT}": 1
+      },
+      "audio": "Book",
+      "xtriggers": { "scrutiny": "journal.{ORIGIN_ID}" }
+    },
+    {
+      "id": "journal.{ORIGIN_ID}",
+      "icon": "{VANILLA_JOURNAL_ICON}",
+      "label": "{JOURNAL_NAME}",
+      "desc": "{JOURNAL_DESC}",
+      "inherits": "_book",
+      "audio": "Book",
+      "aspects": {
+        "journal": 1,
+        "memories.{ORIGIN_ID}": 1,
+        "mystery.{ORIGIN_MYSTERY}": 1,
+        "{ORIGIN_JOURNAL_ASPECT}": 1
+      },
+      "xtriggers": {
+        "mastering.{ORIGIN_MYSTERY}": [
+          {
+            "id": "x.{ORIGIN_PRIMARY_SKILL}",
+            "morpheffect": "spawn",
+            "level": 3
+          },
+          {
+            "id": "x.{ORIGIN_SECONDARY_SKILL}",
+            "morpheffect": "spawn",
+            "level": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "memories.{ORIGIN_ID}",
+      "label": "Memories: {ORIGIN_NAME}",
+      "desc": "{ORIGIN_MEMORIES_DESC}",
+      "isAspect": true,
+      "sort": "group3_me.5origin",
+      "icon": "jm.{ORIGIN_WISDOM}",
+      "comments": "recipe _or_ element aspect"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "recipes": [
+    {
+      "id": "historybuilder.spawnoriginsetup.{ORIGIN_ID}",
+      "reqs": { "historybuilder.setup.{ORIGIN_ID}": -1 },
+      "effects": { "historybuilder.setup.{ORIGIN_ID}": 1 },
+      "linked": [{ "id": "historybuilder.spawnoriginsetupcards" }]
+    },
+    {
+      "id": "setup.librarian.historybuilder.{ORIGIN_ID}",
+      "actionid": "consider.setup",
+      "label": "Choose my past: {ORIGIN_NAME}",
+      "startdescription": "{ORIGIN_SELECT_TEXT} [This will forgo the normal Origin selection, and start the game as {ORIGIN_NAME}]",
+      "desc": "{ORIGIN_POST_SELECT_TEXT}\n\n[Mysteries have been added to your Journal. You can begin to investigate them when you and your journal are both dry.]",
+      "warmup": 5,
+      "reqs": {
+        "journal.generic.start": 1,
+        "historybuilder.setup.{ORIGIN_ID}": 1
+      },
+      "effects": {
+        "introduction.{ORIGIN_INTRO}.start": 1,
+        "journal.generic.start": -1,
+        "historybuilder.setup.{ORIGIN_ID}": -1,
+        "historybuilder.pre.journal.{ORIGIN_ID}": 1,
+        "{ORIGIN_SOULEMENT1}": 1,
+        "{ORIGIN_SOULEMENT2}": 1
+      },
+      "comments": "extra purges below are for backwards compatibility",
+      "purge": {
+        "setup.fet": 1,
+        "setup.sha": 1,
+        "setup.cho": 1,
+        "zcho": 1,
+        "zfet": 1,
+        "zsha": 1
+      },
+      "craftable": true,
+      "aspects": { "advancing": 1, "recovering.ability": 1 },
+      "linked": [
+        {
+          "id": "setup.librarian.talk",
+          "additional": true,
+          "topath": "~/fixedverbs"
+        },
+        {
+          "id": "historybuilder.purgeorigincard.*"
+        }
+      ]
+    },
+    {
+      "id": "historybuilder.purgeorigincard.{ORIGIN_ID}",
+      "extantreqs": { "historybuilder.setup.{ORIGIN_ID}": 1 },
+      "purge": { "historybuilder.setup.{ORIGIN_ID}": 1 },
+      "linked": ["historybuilder.purgeorigincards"]
+    },
+    {
+      "id": "dry.journal.generic.start.{ORIGIN_ID}",
+      "actionid": "x",
+      "reqs": { "historybuilder.pre.journal.{ORIGIN_ID}": 1, "soaked": 1 },
+      "effects": {
+        "historybuilder.pre.journal.{ORIGIN_ID}": -1,
+        "journal.{ORIGIN_ID}.unc": 1
+      }
+    },
+    {
+      "id": "catalogue.journal.{ORIGIN_ID}",
+      "label": "A Journal?",
+      "actionid": "*consider",
+      "startdescription": "{JOURNAL_CAT_PREDESC}",
+      "desc": "{JOURNAL_CAT_DESC}",
+      "reqs": { "journal.{ORIGIN_ID}.unc": 1, "ability": 1 },
+      "effects": { "{ORIGIN_SOULEMENT1}": 1 },
+      "aspects": { "scrutiny": 1, "fatiguing": 1 },
+      "fx": { "ui_wisdoms_or_world.show": 4 },
+      "craftable": true,
+      "warmup": 30
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "achievements": [
+    {
+      "id": "A_V_ORIGIN_{ORIGIN_ID}",
+      "category": "A_CATEGORY_V_ORIGIN",
+      "iconUnlocked": "",
+      "singleDescription": true,
+      "validateOnStorefront": false,
+      "label": "{ORIGIN_ACHIEVEMENT_NAME}",
+      "descriptionunlocked": "{ORIGIN_ACHIEVEMENT_DESC}"
+    }
+  ]
+}
